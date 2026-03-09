@@ -4,6 +4,7 @@ vim.opt.tabstop = 4
 vim.opt.shiftwidth = 4
 vim.opt.softtabstop = 4
 vim.opt.relativenumber = true
+vim.opt.termguicolors = true
 
 -- vim.pack.add docs: https://neovim.io/doc/user/pack/#vim.pack.add()
 vim.pack.add({
@@ -65,6 +66,7 @@ require("neoscroll").setup()
 
 -- nvim-tree
 require("nvim-tree").setup()
+vim.api.nvim_set_keymap("n", "<C-n>", ":NvimTreeToggle<CR>", { noremap = true, silent = true })
 
 -- telescope
 local builtin = require("telescope.builtin")
