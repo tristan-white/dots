@@ -8,6 +8,8 @@ vim.opt.termguicolors = true
 
 -- vim.pack.add docs: https://neovim.io/doc/user/pack/#vim.pack.add()
 vim.pack.add({
+	"https://github.com/tpope/vim-fugitive",
+
 	"https://github.com/nvim-telescope/telescope-fzf-native.nvim",
 
 	"https://github.com/morhetz/gruvbox",
@@ -73,7 +75,10 @@ local builtin = require("telescope.builtin")
 vim.keymap.set("n", "<leader>ff", builtin.find_files, { desc = "Telescope find files" })
 vim.keymap.set("n", "<leader>fg", builtin.live_grep, { desc = "Telescope live grep" })
 vim.keymap.set("n", "<leader>gr", builtin.lsp_references, { desc = "Lists LSP references for word under the cursor" })
--- You must maually buld fzf after vim.pack downloads it:
+-- You must manually build fzf after vim.pack downloads it:
 -- 1) Go to: ~/.local/share/nvim/site/pack/core/opt/telescope-fzf-native.nvim
 -- 2) Run `make`
 require("telescope").load_extension("fzf")
+
+-- Add a keymap to toggle spell checker
+vim.api.nvim_set_keymap("n", "<leader>s", ":set spell!<CR>", { noremap = true })
