@@ -8,6 +8,8 @@ vim.opt.termguicolors = true
 
 -- vim.pack.add docs: https://neovim.io/doc/user/pack/#vim.pack.add()
 vim.pack.add({
+	"https://github.com/numToStr/Comment.nvim",
+
 	"https://github.com/tpope/vim-fugitive",
 
 	"https://github.com/nvim-telescope/telescope-fzf-native.nvim",
@@ -62,6 +64,7 @@ vim.lsp.enable("ty")
 
 -- gruvbox
 vim.cmd.colorscheme("gruvbox")
+-- vim.cmd.colorscheme("cyberdream")
 
 -- neoscroll
 require("neoscroll").setup()
