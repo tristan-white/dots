@@ -6,6 +6,8 @@ vim.opt.softtabstop = 4
 vim.opt.relativenumber = true
 vim.opt.termguicolors = true
 
+vim.opt.clipboard = "unnamedplus"
+
 -- vim.pack.add docs: https://neovim.io/doc/user/pack/#vim.pack.add()
 vim.pack.add({
 	"https://github.com/numToStr/Comment.nvim",
