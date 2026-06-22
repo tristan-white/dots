@@ -18,6 +18,7 @@ vim.pack.add({
 	"https://github.com/numToStr/Comment.nvim",
 
 	"https://github.com/Saghen/blink.cmp",
+	"https://github.com/Saghen/blink.lib",
 
 	"https://github.com/romgrk/barbar.nvim",
 
@@ -47,10 +48,10 @@ vim.pack.add({
 
 -- ty lsp
 -- https://docs.astral.sh/ty/editors/#vs-code
-ty_conf = {
-	cmd = { "ty", "server" },
-	filetypes = { "python" },
-	root_markers = { "ty.toml", "pyproject.toml", "setup.py", "setup.cfg", "requirements.txt", ".git" },
+-- ty_conf = {
+-- 	cmd = { "ty", "server" },
+-- 	filetypes = { "python" },
+-- 	root_markers = { "ty.toml", "pyproject.toml", "setup.py", "setup.cfg", "requirements.txt", ".git" },
 
 	-- This is needed for autocompletion
 	--
@@ -68,8 +69,9 @@ ty_conf = {
 	-- 	-- Jumps to code definition when pressing gd in normal mode
 	-- 	vim.keymap.set('n', 'gd', vim.lsp.buf.definition, { desc = 'Go to code definition' })
 	-- end
-}
-vim.lsp.config("ty", ty_conf)
+-- }
+-- vim.lsp.config("ty", ty_conf)
+--
 vim.lsp.enable("ty")
 
 -- gruvbox
