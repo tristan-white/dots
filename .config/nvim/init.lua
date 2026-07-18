@@ -37,7 +37,7 @@ vim.pack.add({
 	"https://github.com/neovim/nvim-lspconfig",
 	"https://github.com/karb94/neoscroll.nvim",
 
-	"https://github.com/nvim-tree/nvim-web-devicons",
+	"https://github.com/nvim-tree/nvim-web-devicons", -- in ubuntu terminal, go to Preferences > Unnamed > Custom Font, select Ubuntu Mono
 	"https://github.com/nvim-tree/nvim-tree.lua",
 	"https://github.com/nvim-lualine/lualine.nvim",
 })
