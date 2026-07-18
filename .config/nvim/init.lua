@@ -115,7 +115,9 @@ vim.api.nvim_set_keymap("n", "<A-c>", "<Cmd>BufferClose<CR>", { noremap = true, 
 -- $data/.local/share/nvim/site/pack/core/opt/blink.cmp
 -- (run :echo stdpath('data') in neovim to see $data path)
 
-require("blink.cmp").setup({
+local cmp = require("blink.cmp")
+cmp.build():pwait()
+cmp.setup({
 	keymap = {
 		preset = "enter",
 		["<Tab>"] = { "accept", "select_next", "fallback" },
