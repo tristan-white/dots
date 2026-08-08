@@ -1,0 +1,11 @@
+add_newline = false
+
+[directory]
+truncate_to_repo = false
+truncation_length = 8
+
+[git_metrics]
+disabled = true
+
+[python]
+disabled = true
